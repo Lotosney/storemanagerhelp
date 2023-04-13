@@ -16,7 +16,7 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StoreManagerHelp - Statystyki Przekąski</title>
+  <title>StoreManagerHelp - Statystyki Słodycze</title>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
@@ -44,8 +44,8 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
           <a href="../dairy/statistics.php">Nabiał</a>
           <a href="../alcohol/statistics.php">Alkohol</a>
           <a href="../tobacco/statistics.php">Wyroby Tytoniowe</a>
-          <a class="active" href="statistics.php">Przekąski</a>
-          <a href="../sweets/statistics.php">Słodycze</a>
+          <a href="../snacks/statistics.php">Przekąski</a>
+          <a class="active" href="statistics.php">Słodycze</a>
           <a href="../bakery/statistics.php">Pieczywo</a>
           <a href="../vegetables/statistics.php">Warzywa</a>
           <a href="../fruits/statistics.php">Owoce</a>
@@ -88,7 +88,7 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
      
       </div>
       <form>
-        <h1> Przekąski</h1>
+        <h1> Słodycze</h1>
         <div class="tab">
         <table class="table">
           <thead>
