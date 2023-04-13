@@ -1,13 +1,11 @@
 <?php
-// Init session
+
 session_start();
 
-// Include db config
 require_once 'database.php';
 
-// Validate login
 if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
-    header('location: store-login.php');
+    header('location: login.php');
     exit;
 }
 
@@ -15,12 +13,10 @@ $product_name = $product_brand = $supplier_name = $product_amount = $product_who
 $product_name_err = $product_brand_err = $supplier_name_err = $product_amount_err = $product_wholesale_price_err  = $product_type_err = $purchase_time_err= $expiry_date_err ='';
 
 
-// Process form when post submit
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Sanitize POST 
-    $_POST = filter_input_array(INPUT_POST, FILTER_UNSAFE_RAW);
 
-    // Put post vars in regular vars
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+ 
+    $_POST = filter_input_array(INPUT_POST, FILTER_UNSAFE_RAW);
     $product_name =  trim($_POST['product_name']);
     $product_brand = trim($_POST['product_brand']);
     $product_type = trim($_POST['product_type']);
@@ -29,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_wholesale_price  = trim($_POST['product_wholesale_price']);
     $store_email = trim($_POST['store_email']);
     $purchase_time = trim($_POST['purchase_time']);
-    // $expiry_date = trim($_POST['expiry_date']);
-     
+
 
     if (empty($product_name)) {
         $product_name_err = 'Wprowadź  nazwę produktu';
@@ -42,18 +37,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $supplier_name_err = 'Wprowadź  dostawcę';
     }
      else {
-        // Prepare a select statement
         $sql = 'SELECT product_id FROM total_products WHERE product_name = :product_name AND product_brand =:product_brand AND supplier_name =:supplier_name AND  store_email =:store_email';
 
         if ($stmt = $pdo->prepare($sql)) {
-            // Bind variables
             $stmt->bindParam(':product_name', $product_name, PDO::PARAM_STR);
             $stmt->bindParam(':product_brand', $product_brand, PDO::PARAM_STR);
             $stmt->bindParam(':supplier_name', $supplier_name, PDO::PARAM_STR);
             $stmt->bindParam(':store_email', $store_email, PDO::PARAM_STR);
-            // Attempt to execute
             if ($stmt->execute()) {
-                // Check if product exists
                 if ($stmt->rowCount() !== 1) {
                     $product_name_err = 'Ten produkt nie figuruje w bazie dodaj go w odpowiednim miejscu';
                 }
@@ -67,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-    // Validate name
     if (empty($product_name)) {
         $product_name_err = 'Wprowadź nazwę produktu';
     }
