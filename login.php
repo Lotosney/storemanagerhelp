@@ -38,7 +38,7 @@
                 session_start();
                 $_SESSION['email'] = $email;
                 $_SESSION['first_name'] = $row['first_name'];
-                header('location: store-dashboard.php');
+                header('location: dashboard.php');
               } else {
                 $password_err = 'Wprowadzone hasło jest nieprawidłowe';
               }
