@@ -1,7 +1,7 @@
 <?php
 
 $query = $pdo->prepare("SELECT  SUM(`product_amount`) AS `summed_amount`, `purchase_time`, SUM(`product_amount` * `product_wholesale_price`)
- AS `payment` FROM `products`  WHERE `product_type` = 'Nabiał' AND `store_email` =  '" . $email . "' GROUP BY `purchase_time`  ");
+ AS `payment` FROM `products`  WHERE `product_type` = 'Pieczywo' AND `store_email` =  '" . $email . "' GROUP BY `purchase_time`  ");
 
 $query->execute();
 while ($row = $query->fetch()) {
@@ -81,7 +81,6 @@ console.log(purchaseDateArrayJS)
 
     function endDateFilter2(date) {
         const endDate2 = new Date(date.value)
-
         purchaseChart.config.options.scales.x.max = endDate2.setHours(0, 0, 0, 0)
         purchaseChart.update();
     }
