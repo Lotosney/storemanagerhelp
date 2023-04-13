@@ -52,7 +52,7 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
 
         </button>
         <div class="dropdown-content">
-          <a href="main-statistics.php">Główne Statystyki</a>
+          <a class="active" href="main-statistics.php">Główne Statystyki</a>
           <a href="../dairy/statistics.php">Nabiał</a>
           <a href="../alcohol/statistics.php">Alkohol</a>
           <a href="../tobacco/statistics.php">Wyroby Tytoniowe</a>
