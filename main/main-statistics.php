@@ -1,14 +1,14 @@
 <?php
-// Init session
+
 session_start();
-// Include db config
+
 require_once '../database.php';
 
-// Validate login
 if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
   header('location: ../login.php');
   exit;
 }
+$email = $_SESSION['email'];
 ?>
 
 
