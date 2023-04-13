@@ -1,26 +1,32 @@
 <?php
-  session_start();
-  require_once 'database.php';
-  if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
-    header('location: login.php');
-    exit;
-  }
+session_start();
+require_once 'database.php';
+
+
+if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
+
+	header('location:login.php');
+	exit;
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="navbar.css">
-  <title>StoreManagerHelp - Dashboard</title>
-</head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="product-view.css">
+		<link rel="stylesheet" type="text/css" href="navbar.css">
+
+	<title>StoreManagerHelp - Lista Produktów</title>
+	</head>
+
 <body>
-      <nav>
+    <nav>
   <ul>
-  <li><a class="active" href="dashboard.php"><h3>Panel Główny</h3></a></li>
+  <li><a href="dashboard.php"><h3>Panel Główny</h3></a></li>
   <li><a href="sell.php"><h3>Sprzedaż</h3></a></li>
   <li><a href="product-add.php"><h3>Dodaj do bazy</h3></a></li>
   <li><a href="purchase.php"><h3>Kupno</h3></a></li>
@@ -51,17 +57,39 @@
   <li style="float:right"><a class="logout" href="logout.php"><h3>Wyloguj się</h3></a></li>
 </ul>
   </nav>
-  <main>
+<h1>Przegląd produktów</h1>
+<div class="table-container">
+	<form>
+		<table class="table ">
+			<thead class="alert-info">
+				<tr>
+					<th>Nazwa Produktu <button name="product_asc"> &#8593</button>
+						<button name="product_desc"> &#8595</button>
+					</th>
 
-      
-          <h2>Witaj <?php echo $_SESSION['first_name']; ?>!<br> Życzę dużego utargu!</h2>
-          <a href="product-add.php" ><button class="button"><h2>Stwórz bazę produktów</h2></button></a>
-          <a href="purchase.php" ><button class="button"><h2>Dodaj produkty do bazy</h2></button></a>
-          <a href="sell.php"><button class="button"><h2> Dodaj do sprzedanych</h2></button></a>
-          <a href="product-view.php" ><button class="button"><h2>Przejrzyj swoje produkty</h2></button></a>
-          <a href="main/store-statistics.php" ><button class="button"><h2>Przejdź do statystyk</h2></button></a>
-          <a href="logout.php" ><button class="log-out-button"><h2>Wyloguj się</h2></button></a>
+					<th>Marka
+						<button name="brand_asc"> &#8593</button>
+						<button name="brand_desc"> &#8595</button>
+					</th>
+					<th>Dostawca
+						<button name="supplier_name_asc"> &#8593</button>
+						<button name="supplier_name_ desc"> &#8595</button>
+					</th>
+					<th>Ilość
+						<button name="total_amount_asc"> &#8593</button>
+						<button name="total_amount_desc"> &#8595</button>
+					</th>
 
-</main>
+				</tr>
+			</thead>
+			<tbody>
+			<?php require_once 'product-view-back.php'; ?>
+
+			</tbody>
+		</table>
+	</form>
+</div>
+
 </body>
-</html> 
+
+</html>
