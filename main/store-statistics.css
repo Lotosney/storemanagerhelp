@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+h1{
+    color:#4CAF50
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin-inline: 10%;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px;
+    width:300px;
+    margin:20px
+}
+.button2 {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px;
+    width:350px;
+    margin:20px
+}
+@media only screen and (max-width: 1300px){
+    .button {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 15px;
+        width:250px;
+        margin:20px
+    }
+    .button2 {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 15px;
+        width:350px;
+        margin:20px
+    }
+
+}

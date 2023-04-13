@@ -1,0 +1,122 @@
+html{
+        font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+
+}
+
+body{
+    /* background-color: rgb(22, 114, 22); */
+    height: 100%;
+    color:#4CAF50;
+    text-align:center;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.charts{
+    width: 100%;
+    margin: 2.5% ;
+    flex-direction: column;
+}
+.purchases, .sales
+{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 1%;
+}
+
+.chart{
+    width: 48%;
+    height: 400px;
+    margin: 2.5%;
+    background-color: white;
+}
+#myChart{
+    width: 100%;
+}
+
+
+    
+
+    .toggle-button {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 15px;
+        width:300px;
+     
+    }
+    .sales{
+        display: flex;
+    }
+    .purchases{
+        display: none;
+    }
+    @media only screen and (max-width: 1536px) {
+
+
+
+
+    }
+
+    @media only screen and (max-width: 1440px) {
+
+
+
+    }
+    @media only screen and (max-width: 1366px) {
+
+        .charts{
+          
+            flex-direction: column;
+            width: 95%;
+            margin: 2.5% ;
+            height: 500px;
+        }
+        .chart{
+            width: 95%;
+            height: 300px;
+            margin: 2.5%;
+            background-color: white;
+        }
+
+    }
+    @media only screen and (max-width: 1280px){
+
+        .charts{
+         
+            flex-direction: column;
+            width: 95%;
+            margin: 2.5% ;
+            height: 300px;
+        }
+        .chart{
+            width: 85%;
+            height: 300px;
+            margin: 2.5%;
+            background-color: white;
+        }
+
+    }
+    @media only screen and (max-width: 1024px){
+
+        .charts{
+         
+            flex-direction: column;
+            width: 95%;
+            margin: 2.5% ;
+            height: 400px;
+        }
+        .chart{
+            width: 75%;
+            height: 400px;
+            margin: 2.5%;
+            background-color: white;
+        }
+
+    }

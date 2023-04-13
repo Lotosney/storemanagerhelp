@@ -1,0 +1,145 @@
+body{
+    /* background-color: rgb(22, 114, 22); */
+    height: 100%;
+    color:#4CAF50;
+    text-align:center;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: 2,5%;
+}
+.charts{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2.5% ;
+}
+.sales, .purchases{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.chart{
+    width: 95%;
+    height: 400px;
+    margin: 2.5%;
+    background-color: white;
+}
+#myChart{
+    width: 100%;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 2.5%;
+    text-align: center;
+} 
+.pie-chart{
+    width:100%;
+    margin:5.5%;
+    background-color: white;
+ 
+
+}
+.tab{
+    overflow-y: auto;
+    background-color: #4CAF50;
+    max-height: 110px;
+}
+.table{
+    width:100%;
+    color: black;
+
+    
+}
+/* tr:nth-child(even){background-color: #f2f2f2c0;}
+tr:nth-child(odd){background-color: white;}
+tr:hover {background-color: #ddd;}
+
+th {
+    
+    padding:10px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    /* border: 1px solid #ddd; 
+  } */
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+  tr:nth-child(odd){background-color: white;}
+  tr:hover {background-color: #ddd;}
+  
+  th {
+      width: 500px;
+      padding:10px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .toggle-button {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 15px;
+        width:300px;
+        margin-left:33%
+    }
+    .sales{
+        display: block;
+    }
+    .purchases{
+        display: none;
+    }
+    @media only screen and (max-width: 1536px) {
+
+
+
+    }
+
+    @media only screen and (max-width: 1440px) {
+
+
+
+        
+
+
+    }
+    @media only screen and (max-width: 1366px) {
+
+        .charts{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 2.5% ;
+            height: 500px;
+        }
+        .chart{
+            width: 95%;
+            height: 300px;
+            margin: 2.5%;
+            background-color: white;
+        }
+             th {
+            width: 550px;
+            padding:1px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+          }
+
+    }
+    @media only screen and (max-width: 1280px){
+        .chart{
+            width: 95%;
+            height: 250px;
+            margin: 2.5%;
+            background-color: white;
+        }
+
+    }
