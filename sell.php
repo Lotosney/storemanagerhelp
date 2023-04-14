@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
   </div> 
-  <li style="float:right"><a class="logout" href="store-logout.php"><h3>Wyloguj się</h3></a></li>
+  <li style="float:right"><a class="logout" href="logout.php"><h3>Wyloguj się</h3></a></li>
 </ul>
   </nav>
     <main>

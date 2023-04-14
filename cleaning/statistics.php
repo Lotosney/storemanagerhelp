@@ -21,7 +21,7 @@ $email = $_SESSION['email'];
 
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0 "></script>
-  <script src="../main-store-statistics/toggle.js"></script>
+  <script src="../main/toggle.js"></script>
   <link rel="stylesheet" type="text/css" href="../main/view.css">
   <link rel="stylesheet" type="text/css" href="../navbar.css">
 

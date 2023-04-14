@@ -1,0 +1,56 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.invalid-feedback{
+    color: orangered;
+}
+
+
+h1 {
+    text-transform: uppercase;
+
+    text-align: center;
+    color: #4CAF50;
+}
+p{
+    text-align: center;
+}
+
+input {
+
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 10px #4CAF50;
+    width: 240px;
+    height: 30px;
+    background-color: #f2f2f2;
+    color:black;
+}
+.chart{
+    width: 60%;
+    margin-left: 20%;
+    margin-right:20px;
+    background-color: white;
+
+    
+ 
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px;
+    padding:10px;
+    width:250px;
+    margin:20px
+}

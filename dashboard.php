@@ -55,12 +55,13 @@
 
       
           <h2>Witaj <?php echo $_SESSION['first_name']; ?>!<br> Życzę dużego utargu!</h2>
-          <a href="product-add.php" ><button class="button"><h2>Stwórz bazę produktów</h2></button></a>
-          <a href="purchase.php" ><button class="button"><h2>Dodaj produkty do bazy</h2></button></a>
-          <a href="sell.php"><button class="button"><h2> Dodaj do sprzedanych</h2></button></a>
-          <a href="product-view.php" ><button class="button"><h2>Przejrzyj swoje produkty</h2></button></a>
-          <a href="main/store-statistics.php" ><button class="button"><h2>Przejdź do statystyk</h2></button></a>
-          <a href="logout.php" ><button class="log-out-button"><h2>Wyloguj się</h2></button></a>
+          <button class="button"><a href="product-add.php" ><h2>Stwórz bazę produktów</h2></a></button>
+          <button class="button"><a href="purchase.php" ><h2>Dodaj produkty do bazy</h2></button></a>
+          <button class="button"><a href="sell.php"><h2> Dodaj do sprzedanych</h2></button></a>
+          <button class="button"><a href="product-view.php" ><h2>Przejrzyj swoje produkty</h2></button></a>
+          <button class="button"><a href="main/store-statistics.php" ><h2>Przejdź do statystyk</h2></button></a>
+          <button class="button"><a href=single-product-statistics.php" ><h2>Sprzedaż danego produktu</h2></button></a>
+          <button class="log-out-button"><a href="logout.php" ><h2>Wyloguj się</h2></button></a>
 
 </main>
 </body>
