@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             if ($stmt->execute()) {
-                header('location: store-new-products.php');
+                header('location: purchase.php');
             } else {
                 die('Coś poszło nie tak');
             }

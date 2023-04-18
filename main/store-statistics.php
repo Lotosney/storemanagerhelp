@@ -17,7 +17,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="statistics.css">
+  <link rel="stylesheet" type="text/css" href="store-statistics.css">
     <link rel="stylesheet" type="text/css" href="../navbar.css">
   <title>StoreManagerHelp Panel statystyczny</title>
 </head>
@@ -146,7 +146,6 @@
 
     </div>
 
-    <a href="../logout.php">Wyloguj się</a>
 
   </div>
 </body>
