@@ -1,11 +1,11 @@
 <?php
 session_start();
-require_once 'database.php';
+require_once '../database.php';
 
 
 if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
 
-    header('location:login.php');
+    header('location:../login.php');
     exit;
 }
 $email = $_SESSION['email'];
@@ -42,23 +42,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0 "></script>
     <link rel="stylesheet" href="single-product-statistics.css">
-    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
     <title>StoreManagerHelp - Statystyka Pojedyńczego Produktu</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="dashboard.php">
+            <li><a href="../dashboard.php">
                     <h3>Panel Główny</h3>
                 </a></li>
-            <li><a href="sell.php">
+            <li><a href="../sell.php">
                     <h3>Sprzedaż</h3>
                 </a></li>
-            <li><a href="product-add.php">
+            <li><a href="../product-add.php">
                     <h3>Dodaj do bazy</h3>
                 </a></li>
-            <li><a href="purchase.php">
+            <li><a href="../purchase.php">
                     <h3>Kupno</h3>
                 </a></li>
             <div class="dropdown">
@@ -67,26 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 </button>
                 <div class="dropdown-content">
-                    <a href="main/main-statistics.php">Główne Statystyki</a>
-                    <a href="dairy/statistics.php">Nabiał</a>
-                    <a href="alcohol/statistics.php">Alkohol</a>
-                    <a href="tobacco/statistics.php">Wyroby Tytoniowe</a>
-                    <a href="snacks/statistics.php">Przekąski</a>
-                    <a href="sweets/statistics.php">Słodycze</a>
-                    <a href="bakery/statistics.php">Pieczywo</a>
-                    <a href="vegetables/statistics.php">Warzywa</a>
-                    <a href="fruits/statistics.php">Owoce</a>
-                    <a href="jam/statistics.php">Przetwory Warzywne i Owocowe</a>
-                    <a href="meat/statistics.php">Przetwory Mięsne</a>
-                    <a href="fish/statistics.php">Przetwory Rybne</a>
-                    <a href="spices/statistics.php">Przyprawy</a>
-                    <a href="cosmetics/statistics.php">Kosmetyki</a>
-                    <a href="cleaning/statistics.php">Środki Czystości</a>
-                    <a href="beverages/statistics.php">Soki i Napoje</a>
-                    <a href="tea/statistics.php">Kawa i Herbata</a>
+                    <a href="../main/main-statistics.php">Główne Statystyki</a>
+                    <a href="../type/statistics.php">Statystyki rodzajów</a>
+                    <a class="active" href="statistics.php">Statystyki produktó2</a>
+
                 </div>
             </div>
-            <li style="float:right"><a class="logout" href="logout.php">
+            <li style="float:right"><a class="logout" href="../logout.php">
                     <h3>Wyloguj się</h3>
                 </a></li>
         </ul>

@@ -21,7 +21,6 @@ $email = $_SESSION['email'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StoreManagerHelp</title>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0 "></script>
   <script src="toggle.js"></script>
@@ -53,22 +52,9 @@ $email = $_SESSION['email'];
         </button>
         <div class="dropdown-content">
           <a class="active" href="main-statistics.php">Główne Statystyki</a>
-          <a href="../dairy/statistics.php">Nabiał</a>
-          <a href="../alcohol/statistics.php">Alkohol</a>
-          <a href="../tobacco/statistics.php">Wyroby Tytoniowe</a>
-          <a href="../snacks/statistics.php">Przekąski</a>
-          <a href="../sweets/statistics.php">Słodycze</a>
-          <a href="../bakery/statistics.php">Pieczywo</a>
-          <a href="../vegetables/statistics.php">Warzywa</a>
-          <a href="../fruits/statistics.php">Owoce</a>
-          <a href="../jam/statistics.php">Przetwory Warzywne i Owocowe</a>
-          <a href="../meat/statistics.php">Przetwory Mięsne</a>
-          <a href="../fish/statistics.php">Przetwory Rybne</a>
-          <a href="../spices/statistics.php">Przyprawy</a>
-          <a href="../cosmetics/statistics.php">Kosmetyki</a>
-          <a href="../cleaning/statistics.php">Środki Czystości</a>
-          <a href="../beverages/statistics.php">Soki i Napoje</a>
-          <a href="../tea/statistics.php">Kawa i Herbata</a>
+          <a href="../type/statistics.php">Statystyki Rodzajów</a>
+          <a href="../single/statistics.php">Statystyki produktu</a>
+
         </div>
       </div>
       <li style="float:right"><a class="logout" href="../logout.php">

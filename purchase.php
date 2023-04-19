@@ -145,22 +145,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </button>
     <div class="dropdown-content">
       <a  href="main/main-statistics.php">Główne Statystyki</a>
-      <a href="dairy/statistics.php">Nabiał</a>
-      <a href="alcohol/statistics.php">Alkohol</a>
-      <a href="tobacco/statistics.php">Wyroby Tytoniowe</a>
-      <a href="snacks/statistics.php">Przekąski</a>
-      <a href="sweets/statistics.php">Słodycze</a>
-      <a href="bakery/statistics.php">Pieczywo</a>
-      <a href="vegetables/statistics.php">Warzywa</a>
-      <a href="fruits/statistics.php">Owoce</a>
-      <a href="jam/statistics.php">Przetwory Warzywne i Owocowe</a>
-      <a href="meat/statistics.php">Przetwory Mięsne</a>
-      <a href="fish/statistics.php">Przetwory Rybne</a>
-      <a href="spices/statistics.php">Przyprawy</a>
-      <a href="cosmetics/statistics.php">Kosmetyki</a>
-      <a href="cleaning/statistics.php">Środki Czystości</a>
-      <a href="beverages/statistics.php">Soki i Napoje</a>
-      <a href="tea/statistics.php">Kawa i Herbata</a>
+      <a href="type/statistics.php">Statystyki Rodzajów</a>
+      <a href="single/statistics.php">Statystyki Produktu</a>
+
     </div>
   </div> 
   <li style="float:right"><a class="logout" href="logout.php"><h3>Wyloguj się</h3></a></li>

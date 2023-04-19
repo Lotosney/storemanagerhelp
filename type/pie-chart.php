@@ -1,5 +1,5 @@
 <?php $query = $pdo->prepare("SELECT  `product_brand`, `product_amount` FROM `total_products` 
- WHERE `product_type` = 'Artykuły Tytoniowe' AND `store_email` =  '" . $email . "' Group BY `product_brand` ");
+ WHERE `product_type` = '" . $type . "' AND `store_email` =  '" . $email . "' Group BY `product_brand` ");
 $query->execute();
 while ($row = $query->fetch()) {
   $productNameArray[] = $row['product_brand'];

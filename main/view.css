@@ -58,18 +58,24 @@ body{
 
     
 }
-/* tr:nth-child(even){background-color: #f2f2f2c0;}
-tr:nth-child(odd){background-color: white;}
-tr:hover {background-color: #ddd;}
+input {
 
-th {
-    
+    text-align: center;
+    box-shadow: 0 0 10px #4CAF50;
+    width: 240px;
+    height: 30px;
+    background-color: #f2f2f2;
+    color:black;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px;
     padding:10px;
-    text-align: left;
-    background-color: white;
-    color: black;
-    /* border: 1px solid #ddd; 
-  } */
+    width:250px;
+
+}
+
 
   tr:nth-child(even){background-color: #f2f2f2;}
   tr:nth-child(odd){background-color: white;}
